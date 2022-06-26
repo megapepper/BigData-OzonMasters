@@ -1,0 +1,48 @@
+create temporary external table IF NOT EXISTS hw2_test(
+id int,
+if1 int,
+if2 int,
+if3 int,
+if4 int,
+if5 int,
+if6 int,
+if7 int,
+if8 int,
+if9 int,
+if10 int,
+if11 int,
+if12 int,
+if13 int,
+cf1 varchar(20),
+cf2 varchar(20),
+cf3 varchar(20),
+cf4 varchar(20),
+cf5 varchar(20),
+cf6 varchar(20),
+cf7 varchar(20),
+cf8 varchar(20),
+cf9 varchar(20),
+cf10 varchar(20),
+cf11 varchar(20),
+cf12 varchar(20),
+cf13 varchar(20),
+cf14 varchar(20),
+cf15 varchar(20),
+cf16 varchar(20),
+cf17 varchar(20),
+cf18 varchar(20),
+cf19 varchar(20),
+cf20 varchar(20),
+cf21 varchar(20),
+cf22 varchar(20),
+cf23 varchar(20),
+cf24 varchar(20),
+cf25 varchar(20),
+cf26 varchar(20),
+day_number varchar(10))
+row format delimited
+fields terminated by '\t'
+stored as textfile
+location '/datasets/criteo/criteo_test_large_features';
+--location '/user/megapepper/small_test_dir';
+select * from hw2_test limit 5;
